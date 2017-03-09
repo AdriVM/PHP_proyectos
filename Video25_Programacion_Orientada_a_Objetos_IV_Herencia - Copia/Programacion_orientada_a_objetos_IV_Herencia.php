@@ -16,6 +16,13 @@
 		echo "El mazda tiene " . $mazda->ruedas . " ruedas <br>";
 		echo "El pegaso tiene " . $pegaso->ruedas . " ruedas <br>";
 		
+		//metodo heredado de coche.
+		$pegaso->frenar(); 
+		
+		$pegaso->establece_color("Pegaso","Gris");
+		
+		$pegaso->arrancar();
+		
     ?>
   </body>
 </html>
