@@ -46,7 +46,7 @@
 			//Linea que soluciona los errores de cotejamiento. tener todo lo demas en UTF8.
 				mysqli_set_charset($conexion,"utf8"); 
 			
-			$consulta = "SELECT * FROM productos ORDER BY CODART";
+			$consulta = "SELECT * FROM productos WHERE paisdeorigen = 'España' ORDER BY CODART";
 			
 			$resultados = mysqli_query($conexion,$consulta);
 			
